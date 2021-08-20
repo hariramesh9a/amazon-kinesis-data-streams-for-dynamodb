@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "ddbstreamingui15aebfdf_identitypool_15aebfdf",
+    "identityPoolName": "amazonkinesisdatastr1a5aa90c_identitypool_1a5aa90c",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "ddbstr15aebfdf",
-    "userPoolName": "ddbstreamingui15aebfdf_userpool_15aebfdf",
+    "resourceNameTruncated": "amazon1a5aa90c",
+    "userPoolName": "amazonkinesisdatastr1a5aa90c_userpool_1a5aa90c",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -20,7 +20,7 @@
     "requiredAttributes": [
         "email"
     ],
-    "userpoolClientGenerateSecret": true,
+    "userpoolClientGenerateSecret": false,
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientWriteAttributes": [
         "email"
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "ddbstr15aebfdf_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "amazon1a5aa90c_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "15aebfdf",
-    "resourceName": "ddbstreamingui15aebfdf",
+    "sharedId": "1a5aa90c",
+    "resourceName": "amazonkinesisdatastr1a5aa90c",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -48,5 +48,6 @@
     "useDefault": "default",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
+    "usernameCaseSensitive": false,
     "dependsOn": []
 }

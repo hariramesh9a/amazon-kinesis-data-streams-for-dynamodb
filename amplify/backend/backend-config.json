@@ -1,28 +1,17 @@
 {
   "auth": {
-    "ddbstreamingui15aebfdf": {
+    "amazonkinesisdatastr1a5aa90c": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "customAuth": false
     }
   },
-  "api": {
-    "ddbstreamingui": {
-      "service": "AppSync",
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
       "providerPlugin": "awscloudformation",
-      "output": {
-        "authConfig": {
-          "defaultAuthentication": {
-            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
-            "userPoolConfig": {
-              "userPoolId": "authddbstreamingui15aebfdf"
-            }
-          },
-          "additionalAuthenticationProviders": []
-        }
-      }
+      "type": "manual"
     }
-  },
-  "hosting": {}
+  }
 }
