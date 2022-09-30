@@ -26,7 +26,7 @@
     "react-hook-form": "^6.14.0",
     "react-icons": "^3.11.0",
     "react-scripts": "^5.0.0",
-    "recharts": "^1.8.5",
+    "recharts": "^2.1.14",
     "ssri": "^8.0.1",
     "yup": "^0.29.3"
   },
