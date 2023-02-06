@@ -24,7 +24,7 @@ function App() {
   // if (user) {
     return (
       <>    
-        <div className="App-title">Wind Turbine Data Generator</div>
+        <div className="App-title">Water flow meter data generator</div>
         <Windspeed />
      </>
     )
