@@ -137,20 +137,20 @@ function Windspeed() {
         <form onSubmit={handleSubmit(onSubmit)}>
           
           <label>Values</label>
-          <input name="numberofvals" defaultValue={loop} type="number" min ="1" max="99"
-          ref={register({ min: 10, max: 99 })} 
+          <input name="numberofvals" defaultValue={loop} type="number" min ="0" max="20"
+          ref={register({ min: 1, max: 20 })} 
           onChange={e => setLoop(e.target.value)}
           />
 
           <label>Min</label>
-          <input name="lowerLimit" defaultValue={lower} type="number" min ="1" max="99"
-          ref={register({ min: 10, max: 99 })} 
+          <input name="lowerLimit" defaultValue={lower} type="number" min ="0" max="20"
+          ref={register({ min: 1, max: 99 })} 
           onChange={e => setLower(e.target.value)}
           />
 
           <label>Max</label>
-          <input name="upperLimit" defaultValue={upper} type="number" min ="1" max="99"
-          ref={register({ min: 10, max: 99 })} 
+          <input name="upperLimit" defaultValue={upper} type="number" min ="0" max="20"
+          ref={register({ min: 1, max: 99 })} 
           onChange={e => setUpper(e.target.value)}
           />            
           <button type="submit">Save {" "}<FontAwesomeIcon icon={faSave} /></button>
@@ -173,10 +173,8 @@ function Windspeed() {
         </div>
         <CreateLineChart data={myChartArray} />
         <div className="App-info">
-        <p>Every wind turbine has a range of wind speeds, typically around 30 to 55 mph. Speed other than this range is detected anomalous{" "}
-        <a href="https://www.wind-watch.org/faq-output.php" target="_blank" rel="noopener noreferrer">
-        (Source)
-        </a>
+        <p>Water gallons per minute is 1 to 20 GPM.
+        
         </p>
         </div>
       </header>
